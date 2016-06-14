@@ -1,4 +1,4 @@
-require_relative 'flying_hero/game'
+require_relative 'flaying_hero/game'
 
 game = Game.new
 game.show
