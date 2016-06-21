@@ -11,4 +11,5 @@ class FlayingItem
   def draw
     @image.draw(@x, @y, 1, 1, 1)
   end
+  
 end
