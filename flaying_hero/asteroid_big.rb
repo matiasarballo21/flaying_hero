@@ -6,4 +6,7 @@ class AsteroidBig < Asteroid
     @scale_x = 2
     @scale_y = 2
   end
+  def move!
+    @x -=20
+  end
 end

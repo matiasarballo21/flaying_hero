@@ -1,6 +1,8 @@
 require 'Gosu'
 require_relative 'flaying_item'
 class Asteroid < FlayingItem
+  attr_accessor :x
+
   def initialize(window)
       super
       @y =Random.rand(window.height - @height)
