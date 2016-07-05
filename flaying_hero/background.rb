@@ -1,4 +1,4 @@
-  require 'Gosu'
+require 'gosu'
 class Background
   SCROLL_SPEED = 2
 

@@ -1,4 +1,4 @@
-require 'Gosu'
+require 'gosu'
 class Hero
   def initialize
     @sprites = Gosu::Image::load_tiles('assets/images/cat.png', 847/6, 87, tileable: false)

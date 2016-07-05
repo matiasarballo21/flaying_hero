@@ -1,4 +1,4 @@
-require 'Gosu'
+require 'gosu'
 class FlayingItem
 
   def initialize(window)

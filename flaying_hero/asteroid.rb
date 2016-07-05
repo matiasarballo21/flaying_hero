@@ -1,4 +1,4 @@
-require 'Gosu'
+require 'gosu'
 require_relative 'flaying_item'
 class Asteroid < FlayingItem
   attr_accessor :x

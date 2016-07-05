@@ -1,4 +1,4 @@
-require 'Gosu'
+require 'gosu'
 require_relative 'asteroid'
 class AsteroidBig < Asteroid
   def initialize(window)

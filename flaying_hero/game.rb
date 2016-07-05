@@ -1,9 +1,10 @@
 require 'gosu'
-require_relative 'Background'
+require_relative 'background'
 require_relative 'hero'
-require_relative 'Candy'
+require_relative 'candy'
 require_relative 'asteroid_big'
 require_relative 'asteroid_small'
+require_relative 'score'
 
 class Game < Gosu::Window
 
@@ -14,7 +15,8 @@ class Game < Gosu::Window
     @hero = Hero.new
     @candy = Candy.new(self)
     set_asteroid
-  end
+    @score = Score.new
+   end
 def set_asteroid
   @asteroid = @asteroid && @asteroid.instance_of?(AsteroidBig) ?
     AsteroidSmall.new(self) : AsteroidBig.new(self)
@@ -25,7 +27,8 @@ end
     @hero.draw
     @candy.draw
     @asteroid.draw
-  end
+    @score.draw(self)
+    end
 
   def button_down(id)
     if id == Gosu::KbEscape
