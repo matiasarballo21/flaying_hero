@@ -8,4 +8,7 @@ class Candy < FlayingItem
   def move!
     @x -= 10
   end
+  def points
+     10
+  end
 end

@@ -1,5 +1,6 @@
 require 'gosu'
 class FlayingItem
+attr_accessor :x, :y, :height, :width
 
   def initialize(window)
     @image = Gosu::Image.new(self.class.image_path)
@@ -7,7 +8,7 @@ class FlayingItem
     @height = @image.height
     reset!(window)
   end
-  def draw
+  def draw()
     @image.draw(@x, @y, 1, 1, 1)
   end
   def reset!(window)
