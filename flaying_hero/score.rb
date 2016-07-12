@@ -9,6 +9,7 @@ class Score
       @score.draw(0,0,1)
     end
     def update_score!(point)
+      puts point
         @point = @point + point
     end
 end

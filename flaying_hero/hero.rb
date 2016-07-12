@@ -1,6 +1,7 @@
 require 'gosu'
 require_relative 'flaying_item'
 class Hero
+  attr_accessor
   def initialize
     @sprites = Gosu::Image::load_tiles('assets/images/cat.png', 847/6, 87, tileable: false)
     @x = 10
@@ -16,13 +17,13 @@ class Hero
 
   def move_up!
     if @y != 0
-      @y -= 5
+      @y -= 10
     end
   end
 
   def move_down!(height)
     if @y<height - @height
-      @y += 5
+      @y += 10
     end
   end
 
@@ -38,5 +39,7 @@ class Hero
     else
       true
     end
+
   end
+
 end
